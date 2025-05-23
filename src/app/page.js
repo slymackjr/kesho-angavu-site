@@ -103,31 +103,6 @@ export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    // <>
-    //   <Head>
-    //     <title>Kesho Angavu – Empowering Tanzanian Youth</title>
-    //     <meta
-    //       name="description"
-    //       content="Kesho Angavu is a youth-led empowerment initiative by TUCASA MUHAS focused on equipping out-of-school Tanzanian youth with life skills, health education, and sustainable economic opportunities."
-    //     />
-    //     <meta property="og:title" content="Kesho Angavu – Brighter Futures for Tanzanian Youth" />
-    //     <meta
-    //       property="og:description"
-    //       content="Join Kesho Angavu in transforming the lives of youth through entrepreneurship, mentorship, digital literacy, and health education."
-    //     />
-    //     <meta property="og:image" content="/assets/og-image.jpg" />
-    //     <meta property="og:url" content="https://keshoangavu.org" />
-    //     <meta name="twitter:card" content="summary_large_image" />
-    //     <meta name="twitter:title" content="Kesho Angavu – Brighter Futures for Tanzanian Youth" />
-    //     <meta
-    //       name="twitter:description"
-    //       content="Empowering out-of-school youth in Tanzania through skills, values, and community support."
-    //     />
-    //     <meta name="twitter:image" content="/assets/twitter-card.jpg" />
-    //     <meta name="author" content="TUCASA MUHAS – Kesho Angavu Initiative" />
-    //     <meta name="theme-color" content="#3b82f6" />
-    //     <link rel="manifest" href="/manifest.json" />
-    //   </Head>
       <div className="flex min-h-screen flex-col bg-gradient-to-b from-background to-muted/30">
         {/* Header */}
         <header className="sticky top-0 z-50 w-full border-b bg-white border-gray-200">
@@ -728,6 +703,5 @@ export default function Home() {
           </div>
         </footer>
       </div>
-    // </>
   );
 }
