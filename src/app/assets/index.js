@@ -8,6 +8,9 @@ import photo2 from './photo3.JPG';
 import user1 from './user5.JPG';
 import user2 from './user2.JPG';
 import user3 from './user3.JPG';
+import keshoangavu from './angavu-logo.svg';
+import facebookLogo from './facebook.svg';
+import twitterLogo from './twitter.svg';
 
 export{
     image1,
@@ -19,5 +22,8 @@ export{
     photo2,
     user1,
     user2,
-    user3
+    user3,
+    keshoangavu,
+    facebookLogo,
+    twitterLogo
 }

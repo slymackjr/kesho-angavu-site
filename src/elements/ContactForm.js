@@ -23,7 +23,7 @@ const ContactForm = () => {
     setLoading(true);
 
     try {
-      const { data } = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/contact`, form);
+      const { data } = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/contact`, form);
 
       if (data.success) {
         toast.success(data.message || 'Message sent!');
@@ -101,7 +101,7 @@ const ContactForm = () => {
         </div>
         <Button
           type="submit"
-          className="w-full bg-blue-600 hover:bg-blue-700 text-sm"
+          className="w-full bg-indigo-700 hover:bg-indigo-700 text-sm"
           disabled={loading}
         >
           {loading ? 'Sending...' : 'Send Message'}

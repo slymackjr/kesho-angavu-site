@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:site" content="@KeshoAngavu" />
 
         {/* Favicon and Manifest */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/keshoangavu.ico" />
         <link rel="manifest" href="/manifest.json" />
 
         {/* JSON-LD Structured Data */}
@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
               "@type": "NGO",
               name: "Kesho Angavu",
               url: "https://keshoangavu.org",
-              logo: "https://keshoangavu.org/assets/og-image.jpg",
+              logo: "https://keshoangavu.org/kesho-angavu.png",
               sameAs: [
                 "https://www.tucasamuhas.blogspot.com"
               ],

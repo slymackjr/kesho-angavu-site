@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, CheckCircle, Globe, Zap, ChevronRight, Users, Building, Award, Menu } from 'lucide-react';
 import { AnimatedImageGallery, ContactForm,HeroImageSphere } from '@/elements';
-import { photo1,photo2,user1,user2,user3 } from './assets';
+import { facebookLogo, keshoangavu, photo1,photo2,twitterLogo,user1,user2,user3 } from './assets';
 
 // UI Components
 const Button = ({ children, variant = 'default', size = 'default', className = '', ...props }) => {
@@ -108,7 +108,13 @@ export default function Home() {
         <header className="sticky top-0 z-50 w-full border-b bg-white border-gray-200">
           <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6">
             <div className="flex items-center gap-2 font-bold text-lg sm:text-xl">
-              <Globe className="h-6 w-6 text-primary" />
+              <Image
+                src={keshoangavu}
+                alt="Kesho Angavu Logo"
+                width={200}
+                height={100}
+                className="h-16 w-auto"
+              />
               <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text">Kesho Angavu</span>
             </div>
             <nav className="hidden md:flex gap-4 lg:gap-6">
@@ -120,7 +126,7 @@ export default function Home() {
             </nav>
             <div className="flex items-center gap-2 sm:gap-4">
               <div className="hidden md:block">
-                <Button className="shadow-lg shadow-primary/20 transition-all hover:shadow-primary/40 text-sm">
+                <Button className="bg-indigo-700 transition-all hover:bg-indigo-700 text-sm">
                   Get Started
                   <ChevronRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -152,7 +158,7 @@ export default function Home() {
                   </Link>
                 ))}
                 <Button
-                  className="w-full mt-2 text-sm shadow shadow-primary/10"
+                  className="w-full mt-2 text-sm bg-indigo-700"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Get Started
@@ -177,7 +183,7 @@ export default function Home() {
                     Through targeted training, spiritual growth, health education, and leadership development, we support Tanzanian youth—especially out-of-school individuals—to become responsible, self-reliant, and purpose-driven citizens.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-2">
-                    <Button size="default" className="shadow-lg shadow-primary/20 transition-all hover:shadow-primary/40">
+                    <Button size="default" className="bg-yellow-500 transition-all hover:bg-yellow-400">
                       Learn More
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
@@ -681,20 +687,16 @@ export default function Home() {
             </div>
             <div className="mt-8 pt-8 border-t border-gray-200">
               <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-                <p className="text-center text-xs sm:text-sm text-gray-600">
+                <p className="text-center text-xs sm:text-sm text-yellow-700">
                   © {new Date().getFullYear()} TUCASA MUHAS. All rights reserved.
                 </p>
-                <div className="flex gap-4">
-                  <a href="#" className="text-gray-600 hover:text-blue-600">
-                    <svg className="h-5 w-5" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                    </svg>
+                <div className="p-4 rounded flex gap-4">
+                  <a href="#" className="hover:opacity-80 transition-opacity">
+                    <Image src={facebookLogo} alt="Facebook" className="h-5 w-5" />
                     <span className="sr-only">Facebook</span>
                   </a>
-                  <a href="#" className="text-gray-600 hover:text-blue-600">
-                    <svg className="h-5 w-5" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
-                    </svg>
+                  <a href="#" className="hover:opacity-80 transition-opacity">
+                    <Image src={twitterLogo} alt="Twitter" className="h-5 w-5" />
                     <span className="sr-only">Twitter</span>
                   </a>
                 </div>
