@@ -1,7 +1,7 @@
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { image1,image2,image3,image4,image5 } from "@/app/assets";
+import { image1,image2,image3,image4,image5 } from "../../public/assets";
 
 const AnimatedImageGallery = () => {
   const [activeIndex, setActiveIndex] = useState(0);

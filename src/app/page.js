@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, CheckCircle, Globe, Zap, ChevronRight, Users, Building, Award, Menu } from 'lucide-react';
 import { AnimatedImageGallery, ContactForm,HeroImageSphere } from '@/elements';
-import { facebookLogo, keshoangavu, photo1,photo2,twitterLogo,user1,user2,user3 } from './assets';
+import { facebookLogo, keshoangavu, photo1,photo2,twitterLogo,user1,user2,user3 } from '../../public/assets';
 
 // UI Components
 const Button = ({ children, variant = 'default', size = 'default', className = '', ...props }) => {
