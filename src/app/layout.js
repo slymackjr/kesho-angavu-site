@@ -1,43 +1,58 @@
-import Head from 'next/head';
 import './globals.css';
 
 export const metadata = {
   title: 'Kesho Angavu – Empowering Out-of-School Tanzanian Youth for a Brighter Future',
   description:
     'Kesho Angavu by TUCASA MUHAS is a youth-led initiative equipping out-of-school Tanzanian youth with life skills, digital literacy, health education, and sustainable economic opportunities for self-employment.',
+  keywords: [
+    'Kesho Angavu',
+    'youth empowerment Tanzania',
+    'TUCASA MUHAS',
+    'out-of-school youth',
+    'digital skills Tanzania',
+    'youth health education',
+    'entrepreneurship training Tanzania',
+    'community development'
+  ],
+  authors: [{ name: 'TUCASA MUHAS – Kesho Angavu Initiative' }],
+  creator: 'TUCASA MUHAS – Kesho Angavu Initiative',
+  openGraph: {
+    type: 'website',
+    title: 'Kesho Angavu – Empowering Out-of-School Tanzanian Youth',
+    description: 'Training, mentorship, and opportunity for a brighter tomorrow. Join our mission to uplift Tanzanian youth.',
+    url: 'https://keshoangavu.org',
+    siteName: 'Kesho Angavu',
+    images: [
+      {
+        url: '/assets/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Kesho Angavu Open Graph Image',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Kesho Angavu – Youth Empowerment in Tanzania',
+    description: 'Empowering out-of-school youth with skills, values, and opportunities to thrive.',
+    site: '@KeshoAngavu',
+    images: ['/assets/twitter-card.jpg'],
+  },
+  themeColor: '#3b82f6',
+  applicationName: 'Kesho Angavu',
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-region="TZ">
-      <Head>
+      <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="UTF-8" />
         <meta name="robots" content="index, follow" />
-        <meta name="keywords" content="Kesho Angavu, youth empowerment Tanzania, TUCASA MUHAS, out-of-school youth, digital skills Tanzania, youth health education, entrepreneurship training Tanzania, community development" />
-        <meta name="author" content="TUCASA MUHAS – Kesho Angavu Initiative" />
-        <meta name="theme-color" content="#3b82f6" />
-        <meta name="application-name" content="Kesho Angavu" />
-
-        {/* Open Graph (Facebook, LinkedIn) */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Kesho Angavu – Empowering Out-of-School Tanzanian Youth" />
-        <meta property="og:description" content="Training, mentorship, and opportunity for a brighter tomorrow. Join our mission to uplift Tanzanian youth." />
-        <meta property="og:image" content="/assets/og-image.jpg" />
-        <meta property="og:url" content="https://keshoangavu.org" />
-        <meta property="og:site_name" content="Kesho Angavu" />
-
-        {/* Twitter Cards */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Kesho Angavu – Youth Empowerment in Tanzania" />
-        <meta name="twitter:description" content="Empowering out-of-school youth with skills, values, and opportunities to thrive." />
-        <meta name="twitter:image" content="/assets/twitter-card.jpg" />
-        <meta name="twitter:site" content="@KeshoAngavu" />
-
         {/* Favicon and Manifest */}
-        <link rel="icon" type="image/png" href="/assets/kesho-angavu-icon.png" />
+        <link rel="icon" type="image/png" href="/assets/kesho-angavu-icon2.png" />
         <link rel="manifest" href="/manifest.json" />
-
         {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
@@ -67,7 +82,7 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-      </Head>
+      </head>
       <body>{children}</body>
     </html>
   );
