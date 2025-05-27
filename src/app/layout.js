@@ -38,7 +38,6 @@ export const metadata = {
     site: '@KeshoAngavu',
     images: ['/assets/twitter-card.jpg'],
   },
-  themeColor: '#3b82f6',
   applicationName: 'Kesho Angavu',
   manifest: '/manifest.json',
 };
