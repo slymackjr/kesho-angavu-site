@@ -40,6 +40,11 @@ export const metadata = {
   },
   applicationName: 'Kesho Angavu',
   manifest: '/manifest.json',
+  metadataBase: new URL('https://keshoangavu.org'),
+};
+
+export const viewport = {
+  themeColor: "#3b82f6",
 };
 
 export default function RootLayout({ children }) {
