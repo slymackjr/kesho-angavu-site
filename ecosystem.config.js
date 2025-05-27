@@ -10,7 +10,7 @@ module.exports = {
       },
       watch: false,
       instances: "1",
-      exec_mode: "cluster"
+      exec_mode: "fork"
     }
   ]
 };
